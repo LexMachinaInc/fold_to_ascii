@@ -2,7 +2,7 @@
 
 import unittest
 
-from .context import fold_to_ascii
+import fold_to_ascii
 
 
 class BasicTestSuite(unittest.TestCase):

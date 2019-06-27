@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # flake8: noqa
 
-from .context import fold_to_ascii
+import fold_to_ascii
 import unittest
 
 
