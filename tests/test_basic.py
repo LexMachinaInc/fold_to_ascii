@@ -13,11 +13,11 @@ class BasicTestSuite(unittest.TestCase):
 
     def test_bytestring_raises(self):
         with self.assertRaises(TypeError):
-            fold_to_ascii.fold('á')
+            fold_to_ascii.fold(bytearray('á', 'utf-8'))
 
     def test_bytestring_replacement_raises(self):
         with self.assertRaises(TypeError):
-            fold_to_ascii.fold(u'á', 'X')
+            fold_to_ascii.fold(bytearray('á', 'utf-8'), 'X')
 
     def test_fold(self):
         # Fold mapped characters.
