@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from .context import fold_to_ascii
 import unittest
+
+from .context import fold_to_ascii
 
 
 class BasicTestSuite(unittest.TestCase):
